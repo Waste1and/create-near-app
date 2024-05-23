@@ -125,9 +125,9 @@ export async function promptAndGetConfig(): Promise<{ config: UserConfig, projec
     return show.unsupportedNodeVersion(supportedNodeVersion);
   }
 
-  if (process.platform === 'win32') {
-    return show.windowsWarning();
-  }
+  // if (process.platform === 'win32') {
+  //   return show.windowsWarning();
+  // }
 
   // process cli args
   let args = await getUserArgs();
